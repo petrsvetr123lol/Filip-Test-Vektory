@@ -110,7 +110,14 @@ namespace filip_test
 
         private void button1_Click(object sender, EventArgs e)
         {
-            pbox_main.Image.Save(@"Path", System.Drawing.Imaging.ImageFormat.Bmp);
+            /*
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "BMP Image (*.bmp) |*bmp";
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                pbox_main.Image.Save(saveFileDialog.FileName); 
+            }
+            */
         }
     }
 }

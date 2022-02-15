@@ -1,0 +1,10 @@
+C:\Users\petaf\OneDrive\Plocha\Filip-Test-Vektory-main\obj\Debug\filip-test.csproj.SuggestedBindingRedirects.cache
+C:\Users\petaf\OneDrive\Plocha\Filip-Test-Vektory-main\obj\Debug\filip_test.Form1.resources
+C:\Users\petaf\OneDrive\Plocha\Filip-Test-Vektory-main\obj\Debug\filip-test.csproj.GenerateResource.cache
+C:\Users\petaf\OneDrive\Plocha\Filip-Test-Vektory-main\bin\Debug\filip-test.exe.config
+C:\Users\petaf\OneDrive\Plocha\Filip-Test-Vektory-main\bin\Debug\filip-test.exe
+C:\Users\petaf\OneDrive\Plocha\Filip-Test-Vektory-main\bin\Debug\filip-test.pdb
+C:\Users\petaf\OneDrive\Plocha\Filip-Test-Vektory-main\obj\Debug\filip-test.csproj.AssemblyReference.cache
+C:\Users\petaf\OneDrive\Plocha\Filip-Test-Vektory-main\obj\Debug\filip-test.csproj.CoreCompileInputs.cache
+C:\Users\petaf\OneDrive\Plocha\Filip-Test-Vektory-main\obj\Debug\filip-test.exe
+C:\Users\petaf\OneDrive\Plocha\Filip-Test-Vektory-main\obj\Debug\filip-test.pdb
