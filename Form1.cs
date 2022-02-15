@@ -12,9 +12,14 @@ namespace filip_test
 {
     public partial class Form1 : Form
     {
+        List<Rings> rings;
         public Form1()
         {
             InitializeComponent();
+            button_generate.Enabled = false;
+            numeric_size.Minimum = 150;
+            numeric_size.Maximum = 450;
+            rings = new List<Rings>();
         }
 
         private void pbox_c1_Click(object sender, EventArgs e)
@@ -53,12 +58,38 @@ namespace filip_test
             {
                 numeric_y.Enabled = false;
                 numeric_x.Enabled = false;
+                button_generate.Enabled = true;
             }
             else
             {
                 numeric_y.Enabled = true;
                 numeric_x.Enabled = true;
+                button_generate.Enabled = false;
             }
+        }
+
+        private void pbox_main_Click(object sender, EventArgs e)
+        {
+            //vykreslení po kliknutí 
+        }
+
+        private void pbox_main_Paint(object sender, PaintEventArgs e)
+        {
+            foreach (var ring in rings)
+            {
+                ring.Draw(e.Graphics);
+            }
+        }
+
+        private void button_generate_Click(object sender, EventArgs e)
+        {
+            Random random = new Random();
+            Rings ring = new Rings();
+            ring.Location = new Point(random.Next(0, pbox_main.Width), random.Next(0, pbox_main.Height));
+            ring.Size = Convert.ToInt32(numeric_size.Value);
+            ring.Ring1 = pbox_c1.BackColor;
+            rings.Add(ring);
+            pbox_main.Refresh();
         }
     }
 }

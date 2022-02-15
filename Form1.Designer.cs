@@ -49,6 +49,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.colorPicker = new System.Windows.Forms.ColorDialog();
+            this.button_generate = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbox_main)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbox_c1)).BeginInit();
@@ -91,6 +92,8 @@
             this.pbox_main.Size = new System.Drawing.Size(801, 391);
             this.pbox_main.TabIndex = 1;
             this.pbox_main.TabStop = false;
+            this.pbox_main.Click += new System.EventHandler(this.pbox_main_Click);
+            this.pbox_main.Paint += new System.Windows.Forms.PaintEventHandler(this.pbox_main_Paint);
             // 
             // pbox_c1
             // 
@@ -218,6 +221,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Silver;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.button_generate);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.numeric_y);
@@ -273,6 +277,16 @@
             this.label8.TabIndex = 4;
             this.label8.Text = "X";
             // 
+            // button_generate
+            // 
+            this.button_generate.Location = new System.Drawing.Point(99, 5);
+            this.button_generate.Name = "button_generate";
+            this.button_generate.Size = new System.Drawing.Size(75, 23);
+            this.button_generate.TabIndex = 13;
+            this.button_generate.Text = "Generuj";
+            this.button_generate.UseVisualStyleBackColor = true;
+            this.button_generate.Click += new System.EventHandler(this.button_generate_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -325,6 +339,7 @@
         private System.Windows.Forms.NumericUpDown numeric_x;
         private System.Windows.Forms.CheckBox check_random;
         private System.Windows.Forms.ColorDialog colorPicker;
+        private System.Windows.Forms.Button button_generate;
     }
 }
 
