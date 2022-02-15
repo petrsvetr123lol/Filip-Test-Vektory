@@ -40,10 +40,10 @@ namespace filip_test
             var ringWidth = Size / 3;
             var ringHeight = Size / 3;
             graphics.DrawEllipse(pen, Location.X, Location.Y, ringWidth, ringHeight);
-            graphics.DrawEllipse(pen2, Location.X + Size/2, Location.Y, ringWidth, ringHeight);
-            graphics.DrawEllipse(pen3, Location.X - Size/2, Location.Y, ringWidth, ringHeight);
-            graphics.DrawEllipse(pen4, Location.X, Location.Y + Size/2, ringWidth, ringHeight);
-            graphics.DrawEllipse(pen5, Location.X, Location.Y - Size/2, ringWidth, ringHeight);
+            graphics.DrawEllipse(pen2, Location.X + Size/4, Location.Y, ringWidth, ringHeight);
+            graphics.DrawEllipse(pen3, Location.X - Size/4, Location.Y, ringWidth, ringHeight);
+            graphics.DrawEllipse(pen4, Location.X + Size/5, Location.Y + Size/4, ringWidth, ringHeight);
+            graphics.DrawEllipse(pen5, Location.X - Size/6, Location.Y + Size/4, ringWidth, ringHeight);
 
         }
     }
