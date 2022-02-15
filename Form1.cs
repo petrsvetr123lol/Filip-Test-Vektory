@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
-
+using System.IO;
 namespace filip_test
 {
     public partial class Form1 : Form
@@ -106,6 +106,11 @@ namespace filip_test
                 rings.Add(ring);
                 pbox_main.Refresh();
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            pbox_main.Image.Save(@"Path", System.Drawing.Imaging.ImageFormat.Bmp);
         }
     }
 }
