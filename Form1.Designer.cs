@@ -48,6 +48,7 @@
             this.numeric_y = new System.Windows.Forms.NumericUpDown();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.colorPicker = new System.Windows.Forms.ColorDialog();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbox_main)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbox_c1)).BeginInit();
@@ -100,6 +101,7 @@
             this.pbox_c1.Size = new System.Drawing.Size(43, 40);
             this.pbox_c1.TabIndex = 2;
             this.pbox_c1.TabStop = false;
+            this.pbox_c1.Click += new System.EventHandler(this.pbox_c1_Click);
             // 
             // pbox_c2
             // 
@@ -110,6 +112,7 @@
             this.pbox_c2.Size = new System.Drawing.Size(43, 40);
             this.pbox_c2.TabIndex = 3;
             this.pbox_c2.TabStop = false;
+            this.pbox_c2.Click += new System.EventHandler(this.pbox_c2_Click);
             // 
             // pbox_c3
             // 
@@ -120,6 +123,7 @@
             this.pbox_c3.Size = new System.Drawing.Size(43, 40);
             this.pbox_c3.TabIndex = 4;
             this.pbox_c3.TabStop = false;
+            this.pbox_c3.Click += new System.EventHandler(this.pbox_c3_Click);
             // 
             // pbox_c4
             // 
@@ -130,6 +134,7 @@
             this.pbox_c4.Size = new System.Drawing.Size(43, 40);
             this.pbox_c4.TabIndex = 5;
             this.pbox_c4.TabStop = false;
+            this.pbox_c4.Click += new System.EventHandler(this.pbox_c4_Click);
             // 
             // pbox_c5
             // 
@@ -140,6 +145,7 @@
             this.pbox_c5.Size = new System.Drawing.Size(43, 40);
             this.pbox_c5.TabIndex = 3;
             this.pbox_c5.TabStop = false;
+            this.pbox_c5.Click += new System.EventHandler(this.pbox_c5_Click);
             // 
             // label1
             // 
@@ -231,6 +237,7 @@
             this.check_random.TabIndex = 0;
             this.check_random.Text = "Náhodně";
             this.check_random.UseVisualStyleBackColor = true;
+            this.check_random.CheckedChanged += new System.EventHandler(this.check_random_CheckedChanged);
             // 
             // numeric_x
             // 
@@ -317,6 +324,7 @@
         private System.Windows.Forms.NumericUpDown numeric_y;
         private System.Windows.Forms.NumericUpDown numeric_x;
         private System.Windows.Forms.CheckBox check_random;
+        private System.Windows.Forms.ColorDialog colorPicker;
     }
 }
 
