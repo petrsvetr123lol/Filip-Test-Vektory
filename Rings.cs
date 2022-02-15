@@ -37,14 +37,13 @@ namespace filip_test
             pen4.Width = Size / 50;
             pen5.Width = Size / 50;
  
-            Brush ringBrush = new SolidBrush(Ring1); ;
             var ringWidth = Size / 3;
-            var ringHeight = (3 * ringWidth) / 4;
-            graphics.DrawEllipse(pen, Location.X + 10, Location.Y, ringWidth, ringHeight);
-            graphics.DrawEllipse(pen2, Location.X + 30, Location.Y, ringWidth, ringHeight);
-            graphics.DrawEllipse(pen3, Location.X- 10, Location.Y, ringWidth, ringHeight);
-            graphics.DrawEllipse(pen4, Location.X- 40, Location.Y, ringWidth, ringHeight);
-            graphics.DrawEllipse(pen5, Location.X + 50, Location.Y, ringWidth, ringHeight);
+            var ringHeight = Size / 3;
+            graphics.DrawEllipse(pen, Location.X, Location.Y, ringWidth, ringHeight);
+            graphics.DrawEllipse(pen2, Location.X + Size/2, Location.Y, ringWidth, ringHeight);
+            graphics.DrawEllipse(pen3, Location.X - Size/2, Location.Y, ringWidth, ringHeight);
+            graphics.DrawEllipse(pen4, Location.X, Location.Y + Size/2, ringWidth, ringHeight);
+            graphics.DrawEllipse(pen5, Location.X, Location.Y - Size/2, ringWidth, ringHeight);
 
         }
     }
