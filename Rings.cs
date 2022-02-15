@@ -30,7 +30,7 @@ namespace filip_test
             var ringWidth = Size / 3;
             var ringHeight = (3 * ringWidth) / 4;
             //zkouška vypsani obdelniku
-            graphics.FillRectangle(ringBrush, Location.X, Location.Y, ringWidth, ringHeight);
+            graphics.DrawEllipse(pen, Location.X, Location.Y, ringWidth, ringHeight);
 
         }
     }
