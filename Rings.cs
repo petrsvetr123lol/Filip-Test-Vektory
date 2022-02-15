@@ -24,13 +24,27 @@ namespace filip_test
         }
         public void Draw (Graphics graphics)
         {
-            Pen pen = new Pen(Color.Black);
+            Pen pen = new Pen(Ring1) ;
+            Pen pen2 = new Pen(Ring2);
+            Pen pen3 = new Pen(Ring3);
+            Pen pen4 = new Pen(Ring4);
+            Pen pen5 = new Pen(Ring5);
+
+
             pen.Width = Size / 50;
+            pen2.Width = Size / 50;
+            pen3.Width = Size / 50;
+            pen4.Width = Size / 50;
+            pen5.Width = Size / 50;
+ 
             Brush ringBrush = new SolidBrush(Ring1); ;
             var ringWidth = Size / 3;
             var ringHeight = (3 * ringWidth) / 4;
-            //zkouška vypsani obdelniku
-            graphics.DrawEllipse(pen, Location.X, Location.Y, ringWidth, ringHeight);
+            graphics.DrawEllipse(pen, Location.X + 10, Location.Y, ringWidth, ringHeight);
+            graphics.DrawEllipse(pen2, Location.X + 30, Location.Y, ringWidth, ringHeight);
+            graphics.DrawEllipse(pen3, Location.X- 10, Location.Y, ringWidth, ringHeight);
+            graphics.DrawEllipse(pen4, Location.X- 40, Location.Y, ringWidth, ringHeight);
+            graphics.DrawEllipse(pen5, Location.X + 50, Location.Y, ringWidth, ringHeight);
 
         }
     }

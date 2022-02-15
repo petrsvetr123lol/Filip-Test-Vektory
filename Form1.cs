@@ -88,6 +88,10 @@ namespace filip_test
             ring.Location = new Point(random.Next(0, pbox_main.Width), random.Next(0, pbox_main.Height));
             ring.Size = Convert.ToInt32(numeric_size.Value);
             ring.Ring1 = pbox_c1.BackColor;
+            ring.Ring2 = pbox_c2.BackColor;
+            ring.Ring3 = pbox_c3.BackColor;
+            ring.Ring4 = pbox_c4.BackColor;
+            ring.Ring5 = pbox_c5.BackColor;
             rings.Add(ring);
             pbox_main.Refresh();
         }
